@@ -1,0 +1,8 @@
+version: "3"
+services:
+  jupyter:
+    build: .
+    working_dir: /home
+    ports:
+      - 8080:8080
+    command: jupyter notebook --ip=0.0.0.0 --allow-root --no-browser
